@@ -121,8 +121,8 @@ PREFIX results_in_remodeling_of: <http://purl.obolibrary.org/obo/RO_0002591>
 }
 
 <ProvenanceAnnotated> {
-  contributor: xsd:string *; #TODO would be better as an IRI
-  date: xsd:string *; #TODO can we make this an xsd:date?
+  contributor: xsd:string +; #TODO would be better as an IRI
+  date: xsd:string {1}; #TODO can we make this an xsd:date?
   provided_by: xsd:string *; #TODO would be better as an IRI
   rdfs:comment xsd:string *;
   skos:note xsd:string *;
