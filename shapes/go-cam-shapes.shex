@@ -130,11 +130,11 @@ PREFIX results_in_remodeling_of: <http://purl.obolibrary.org/obo/RO_0002591>
 
 <GoCamEntity> IRI @<ProvenanceAnnotated> AND EXTRA a {
   a [owl:NamedIndividual] * // rdfs:comment  "Every entity we care about is a named individual";
-  xref: . *;
-  rdfs:label . {0,1} //rdfs:comment "the name" ;
+  xref: . *; //rdfs:comment "mappings for the entity. Value is typically a CURIE string. Currently this is only used for Reactome-derived models." ;
+  rdfs:label . {0,1} //rdfs:comment "the name of the entity. Currently this is only used for Reactome-derived models." ;
   exact_match: . *;
-  x: . {0,1} // rdfs:comment  "X coordinate for node";
-  y: . {0,1} // rdfs:comment  "Y coordinate for node";
+  x: . {0,1} // rdfs:comment  "X coordinate for node. This is used for caching layouts in the Noctua Graph Editor.";
+  y: . {0,1} // rdfs:comment  "Y coordinate for node. This is used for caching layouts in the Noctua Graph Editor.";
   skos:narrower . * //rdfs:comment "This entity (e.g. a node representing a pathway) represents a narrower (in any sense) concept then the target node. ";
   skos:broader . * //rdfs:comment "This entity (e.g. a node representing a pathway) represents a broader (in any sense) concept then the target node. ";
 } // rdfs:comment  "Default allowable metadata for GO-CAM entities"
