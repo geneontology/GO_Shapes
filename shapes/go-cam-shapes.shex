@@ -75,15 +75,12 @@ PREFIX has_target_end_location: <http://purl.obolibrary.org/obo/RO_0002339>
 PREFIX has_target_start_location: <http://purl.obolibrary.org/obo/RO_0002338>
 PREFIX transports_or_maintains_localization_of: <http://purl.obolibrary.org/obo/RO_0002313>
 PREFIX directly_provides_input_for: <http://purl.obolibrary.org/obo/RO_0002413>
-PREFIX directly_positively_regulates: <http://purl.obolibrary.org/obo/RO_0002629>
 PREFIX located_in: <http://purl.obolibrary.org/obo/RO_0001025>
 PREFIX location_of: <http://purl.obolibrary.org/obo/RO_0001015>
 PREFIX happens_during: <http://purl.obolibrary.org/obo/RO_0002092>
 PREFIX regulates: <http://purl.obolibrary.org/obo/RO_0002211>
 PREFIX negatively_regulates: <http://purl.obolibrary.org/obo/RO_0002212>
 PREFIX positively_regulates: <http://purl.obolibrary.org/obo/RO_0002213>
-PREFIX directly_regulates: <http://purl.obolibrary.org/obo/RO_0002578>
-PREFIX directly_negatively_regulates: <http://purl.obolibrary.org/obo/RO_0002630>
 PREFIX directly_activates: <http://purl.obolibrary.org/obo/RO_0002406>
 PREFIX causally_upstream_of_or_within: <http://purl.obolibrary.org/obo/RO_0002418>
 PREFIX causally_upstream_of_or_within_negative_effect: <http://purl.obolibrary.org/obo/RO_0004046>
@@ -373,9 +370,6 @@ PREFIX results_in_remodeling_of: <http://purl.obolibrary.org/obo/RO_0002591>
   regulates: ( @<MolecularFunction> OR @<MolecularEvent> ) *;
   negatively_regulates: ( @<MolecularFunction> OR @<MolecularEvent> ) *;
   positively_regulates: ( @<MolecularFunction> OR @<MolecularEvent> ) *;
-  directly_regulates: ( @<MolecularFunction> OR @<MolecularEvent> ) *;
-  directly_negatively_regulates: ( @<MolecularFunction> OR @<MolecularEvent> ) *;
-  directly_positively_regulates: ( @<MolecularFunction> OR @<MolecularEvent> ) *;
   causally_upstream_of_or_within: ( @<MolecularFunction> OR @<MolecularEvent> OR @<BiologicalProcess> ) *;
   causally_upstream_of_or_within_negative_effect: @<BiologicalProcess> *;
   causally_upstream_of_or_within_positive_effect: @<BiologicalProcess> *;
